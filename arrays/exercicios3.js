@@ -31,3 +31,20 @@ console.log(coresSemDuplicatas);
 
 const retornaPares = valores.filter(numero => numero % 2 === 0);
 console.log(retornaPares);
+
+//5 - Crie uma função que filtre os números de um array que são múltiplos de 3 e maiores que 5.
+
+function verificaMultiploTresMaiorCinco(array) {
+    const numerosFiltrados = array.filter(numero => (numero % 3 == 0 && numero > 5))
+    return numerosFiltrados;
+}
+
+console.log(verificaMultiploTresMaiorCinco(valores));
+
+//6 - Crie uma função que receba um array de números e retorne a soma de todos os elementos.
+
+function somaNumeros(array){
+    return array.reduce((contador, indice) => contador + indice, 0);
+}
+
+console.log(somaNumeros(valores));
